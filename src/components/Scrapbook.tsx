@@ -35,8 +35,8 @@ export const Scrapbook = () => {
         ],
       },
       rightPhotos: [
-        "/photo-4.jpg",
-        "/photo-5.jpg",
+        "/photo-4.JPG",
+        "/photo-5.JPG",
         "/photo-6.jpg",
       ],
     },
@@ -63,7 +63,7 @@ export const Scrapbook = () => {
         ],
       },
       rightPhotos: [
-        "/photo-10.jpg",
+        "/photo-10.jpeg",
         "/photo-1.jpg",
         "/photo-2.jpg",
       ],
@@ -78,8 +78,8 @@ export const Scrapbook = () => {
       },
       rightPhotos: [
         "/photo-3.jpg",
-        "/photo-4.jpg",
-        "/photo-5.jpg",
+        "/photo-4.JPG",
+        "/photo-5.JPG",
       ],
     },
   ];
