@@ -21,7 +21,7 @@ export const Scrapbook = () => {
         ],
       },
       rightPhotos: [
-        "/src/assets/photo-1.jpg",
+        "/photo-1.jpg",
         "/src/assets/photo-2.jpg",
         "/src/assets/photo-3.jpg",
       ],
