@@ -1,0 +1,141 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Cute pastel color palette */
+    --background: 330 100% 98%;
+    --foreground: 330 25% 25%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 330 25% 25%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 330 25% 25%;
+
+    /* Soft pink primary */
+    --primary: 340 82% 75%;
+    --primary-foreground: 0 0% 100%;
+    --primary-glow: 340 100% 85%;
+
+    /* Lavender secondary */
+    --secondary: 270 50% 85%;
+    --secondary-foreground: 270 25% 25%;
+
+    /* Peach muted */
+    --muted: 25 100% 92%;
+    --muted-foreground: 25 25% 45%;
+
+    /* Mint accent */
+    --accent: 160 60% 85%;
+    --accent-foreground: 160 25% 25%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 330 40% 90%;
+    --input: 330 40% 90%;
+    --ring: 340 82% 75%;
+
+    --radius: 1rem;
+
+    /* Gradients */
+    --gradient-pastel: linear-gradient(135deg, hsl(340 82% 75%), hsl(270 50% 85%), hsl(160 60% 85%));
+    --gradient-pink: linear-gradient(135deg, hsl(340 100% 85%), hsl(340 82% 75%));
+    --gradient-soft: linear-gradient(180deg, hsl(330 100% 98%), hsl(270 100% 97%));
+
+    /* Shadows */
+    --shadow-soft: 0 4px 20px hsl(340 82% 75% / 0.15);
+    --shadow-paper: 0 10px 30px hsl(0 0% 0% / 0.1);
+    
+    --sidebar-background: 330 100% 98%;
+    --sidebar-foreground: 330 25% 25%;
+    --sidebar-primary: 340 82% 75%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 270 50% 85%;
+    --sidebar-accent-foreground: 270 25% 25%;
+    --sidebar-border: 330 40% 90%;
+    --sidebar-ring: 340 82% 75%;
+  }
+
+  .dark {
+    --background: 330 20% 12%;
+    --foreground: 330 100% 98%;
+    --card: 330 20% 15%;
+    --card-foreground: 330 100% 98%;
+    --popover: 330 20% 15%;
+    --popover-foreground: 330 100% 98%;
+    --primary: 340 82% 75%;
+    --primary-foreground: 330 20% 12%;
+    --secondary: 270 30% 25%;
+    --secondary-foreground: 330 100% 98%;
+    --muted: 25 30% 25%;
+    --muted-foreground: 25 100% 75%;
+    --accent: 160 40% 35%;
+    --accent-foreground: 330 100% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 330 100% 98%;
+    --border: 330 30% 25%;
+    --input: 330 30% 25%;
+    --ring: 340 82% 75%;
+    --sidebar-background: 330 20% 12%;
+    --sidebar-foreground: 330 100% 98%;
+    --sidebar-primary: 340 82% 75%;
+    --sidebar-primary-foreground: 330 20% 12%;
+    --sidebar-accent: 270 30% 25%;
+    --sidebar-accent-foreground: 330 100% 98%;
+    --sidebar-border: 330 30% 25%;
+    --sidebar-ring: 340 82% 75%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Nunito', sans-serif;
+  }
+
+  .font-handwritten {
+    font-family: 'Caveat', cursive;
+  }
+}
+
+@layer utilities {
+  .gradient-pastel {
+    background: var(--gradient-pastel);
+  }
+
+  .gradient-pink {
+    background: var(--gradient-pink);
+  }
+
+  .gradient-soft {
+    background: var(--gradient-soft);
+  }
+
+  .shadow-soft {
+    box-shadow: var(--shadow-soft);
+  }
+
+  .shadow-paper {
+    box-shadow: var(--shadow-paper);
+  }
+
+  .page-flip {
+    transform-style: preserve-3d;
+    transition: transform 0.8s cubic-bezier(0.645, 0.045, 0.355, 1);
+  }
+
+  .page-flip.flipped {
+    transform: rotateY(-180deg);
+  }
+}
