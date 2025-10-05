@@ -22,8 +22,8 @@ export const Scrapbook = () => {
       },
       rightPhotos: [
         "/photo-1.jpg",
-        "/src/assets/photo-2.jpg",
-        "/src/assets/photo-3.jpg",
+        "/photo-2.jpg",
+        "/photo-3.jpg",
       ],
     },
     {
@@ -35,9 +35,9 @@ export const Scrapbook = () => {
         ],
       },
       rightPhotos: [
-        "/src/assets/photo-4.jpg",
-        "/src/assets/photo-5.jpg",
-        "/src/assets/photo-6.jpg",
+        "/photo-4.jpg",
+        "/photo-5.jpg",
+        "/photo-6.jpg",
       ],
     },
     {
@@ -49,9 +49,9 @@ export const Scrapbook = () => {
         ],
       },
       rightPhotos: [
-        "/src/assets/photo-7.jpeg",
-        "/src/assets/photo-8.jpeg",
-        "/src/assets/photo-9.jpeg",
+        "/photo-7.jpeg",
+        "/photo-8.jpeg",
+        "/photo-9.jpeg",
       ],
     },
     {
@@ -63,9 +63,9 @@ export const Scrapbook = () => {
         ],
       },
       rightPhotos: [
-        "/src/assets/photo-10.jpg",
-        "/src/assets/photo-1.jpg",
-        "/src/assets/photo-2.jpg",
+        "/photo-10.jpg",
+        "/photo-1.jpg",
+        "/photo-2.jpg",
       ],
     },
     {
@@ -77,9 +77,9 @@ export const Scrapbook = () => {
         ],
       },
       rightPhotos: [
-        "/src/assets/photo-3.jpg",
-        "/src/assets/photo-4.jpg",
-        "/src/assets/photo-5.jpg",
+        "/photo-3.jpg",
+        "/photo-4.jpg",
+        "/photo-5.jpg",
       ],
     },
   ];
